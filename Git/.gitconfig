@@ -1,0 +1,36 @@
+[user]
+    name = Kamil Tomaszewski
+    email = tomaszewski.kamil.97@gmail.com
+[core]
+    editor = nano
+    pager = cat
+[color]
+    ui = auto
+[color "branch"]
+    current = green bold
+    local = yellow bold
+    remote = red bold
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+[init]
+    defaultBranch = master
+[status]
+    showUntrackedFiles = all
+[pull]
+    rebase = merges
+[push]
+    default = simple
+    followTags = true
+[merge]
+    ff = false
+[alias]
+    s = status
+    a = add .
+    ap = add -p
+    c = commit
+    rr = rebase -r
+    ri = rebase -i
+    pf = push --force-with-lease
+    alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
