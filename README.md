@@ -2,6 +2,9 @@
 Repository with my configs.
 
 # Installation
+Clone this repository: `git clone git@github.com:ktomaszewski/config.git -b master config`\
+Now change directory: `cd config`
+
 ## Git
 1. Install Git: `sudo dnf install git`
 2. Copy config file: `cp ./Git/.gitconfig ~/.gitconfig`
