@@ -31,3 +31,6 @@ Now change directory: `cd config`
 
 ## EditorConfig
 1. Copy editor config file: `cp ./EditorConfig/.editorconfig PROJECT_ROOT_PATH`
+
+## PhpStorm
+1. Import settings in PhpStorm: `./PhpStorm/settings.zip`
