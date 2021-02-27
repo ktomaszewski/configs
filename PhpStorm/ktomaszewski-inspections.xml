@@ -22,7 +22,6 @@
   <inspection_tool class="ConfusingFloatingPointLiteralJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ConfusingPlusesOrMinusesJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ConstantOnLHSOfComparisonJS" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="ConstantOnRHSOfComparisonJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ContinueStatementJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ContinueStatementWithLabelJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="CssBrowserCompatibilityForProperties" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -157,7 +156,6 @@
   <inspection_tool class="LongInheritanceChainInspection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="LongLine" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="MagicNumberJS" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="MessDetectorValidationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="MultipleReturnStatementsInspection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="NegatedConditionalExpressionJS" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="NegatedIfStatementJS" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -190,9 +188,13 @@
   <inspection_tool class="ParametersPerFunctionJS" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="5" />
   </inspection_tool>
-  <inspection_tool class="PhpCSFixerValidationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-  <inspection_tool class="PhpCSValidationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-  <inspection_tool class="PhpClassNamingConventionInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="PhpCSValidationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+    <option name="CODING_STANDARD" value="PSR12" />
+    <option name="EXTENSIONS" value="php,js,css,inc" />
+  </inspection_tool>
+  <inspection_tool class="PhpClassNamingConventionInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="m_minLength" value="3" />
+  </inspection_tool>
   <inspection_tool class="PhpCompoundNamespaceDepthInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpConstantNamingConventionInspection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpDivisionByZeroInspection" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -200,7 +202,13 @@
   <inspection_tool class="PhpLongTypeFormInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpMethodNamingConventionInspection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpMethodOrClassCallIsNotCaseSensitiveInspection" enabled="true" level="WARNING" enabled_by_default="true" />
-  <inspection_tool class="PhpMissingDocCommentInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="PhpMissingDocCommentInspection" enabled="false" level="WARNING" enabled_by_default="false">
+    <option name="CHECK_FUNCTION" value="false" />
+    <option name="CHECK_CLASS" value="false" />
+    <option name="CHECK_METHOD" value="false" />
+    <option name="SKIP_EMPTY_FUNCTION" value="false" />
+    <option name="SKIP_EMPTY_METHOD" value="false" />
+  </inspection_tool>
   <inspection_tool class="PhpMissingParentCallCommonInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpMissingParentCallMagicInspection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpMissingStrictTypesDeclarationInspection" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -212,6 +220,9 @@
   <inspection_tool class="PhpPropertyNamingConventionInspection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpSeparateElseIfInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpShortOpenTagInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="PhpStanGlobal" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+    <option name="level" value="8" />
+  </inspection_tool>
   <inspection_tool class="PhpStaticAsDynamicMethodCallInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpTooManyParametersInspection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PhpTraditionalSyntaxArrayLiteralInspection" enabled="true" level="WARNING" enabled_by_default="true" />
