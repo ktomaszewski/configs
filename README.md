@@ -34,3 +34,10 @@ Now change directory: `cd config`
 
 ## PhpStorm
 1. Import settings in PhpStorm: `./PhpStorm/settings.zip`
+
+## EasyCodingStandard
+1. Add `ext-inl` dependency: `composer require --dev ext-intl`
+2. Add `symplify/easy-coding-standard dependency` dependency: `composer require --dev symplify/easy-coding-standard`
+3. Add composer scripts: `"scripts": { "ecs-check": "vendor/bin/ecs check --match-git-diff", "ecs-fix": "vendor/bin/ecs check --fix --match-git-diff" }`
+4. Copy dist config file: `cp ./EasyCodingStandard/ecs.php.dist PROJECT_ROOT_PATH`
+5. Make config file from dist config file: `cp PROJECT_ROOT_PATH/ecs.php.dist PROJECT_ROOT_PATH/ecs.php`
