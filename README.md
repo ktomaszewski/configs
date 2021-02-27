@@ -9,10 +9,11 @@ Now change directory: `cd config`
 1. Install Git: `sudo dnf install git`
 2. Copy config file: `cp ./Git/.gitconfig ~/.gitconfig`
 3. Copy attributes file: `cp ./Git/.gitattributes PROJECT_ROOT_PATH`
-4. Create directory for configs: `mkdir -p ~/.config/git`
-5. Download gitk dracula theme: `git clone https://github.com/dracula/gitk.git ~/gitk-dracula-theme`
-6. Copy gitk dracula theme: `cp -r ~/gitk-dracula-theme/gitk ~/.config/git/`
-7. Clean up: `rm -Rf ~/gitk-dracula-theme`
+4. Copy ignore file: `cp ./Git/.gitignore PROJECT_ROOT_PATH`
+5. Create directory for configs: `mkdir -p ~/.config/git`
+6. Download gitk dracula theme: `git clone https://github.com/dracula/gitk.git ~/gitk-dracula-theme`
+7. Copy gitk dracula theme: `cp -r ~/gitk-dracula-theme/gitk ~/.config/git/`
+8. Clean up: `rm -Rf ~/gitk-dracula-theme`
 
 ## zsh
 1. Install zsh: `sudo dnf install zsh`

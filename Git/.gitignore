@@ -1,0 +1,11 @@
+# IDE
+.idea/
+
+# Docker
+docker-compose.yml
+
+# PHP
+vendor/
+ecs.php
+.phpunit.cache/
+phpunit.xml
