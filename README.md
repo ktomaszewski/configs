@@ -41,3 +41,13 @@ Now change directory: `cd config`
 3. Add composer scripts: `"scripts": { "ecs-check": "vendor/bin/ecs check --match-git-diff", "ecs-fix": "vendor/bin/ecs check --fix --match-git-diff" }`
 4. Copy dist config file: `cp ./EasyCodingStandard/ecs.php.dist PROJECT_ROOT_PATH`
 5. Make config file from dist config file: `cp PROJECT_ROOT_PATH/ecs.php.dist PROJECT_ROOT_PATH/ecs.php`
+
+## PHPUnit
+1. Add `phpunit/phpunit` dependency: `composer require --dev phpunit/phpunit`
+2. Add `phpspec/prophecy-phpunit` dependency: `composer require --dev phpspec/prophecy-phpunit`
+3. Add `dg/bypass-finals` dependency: `composer require --dev dg/bypass-finals`
+4. Add composer script: `"scripts": { "unit-tests": "vendor/bin/phpunit --configuration ./phpunit.xml" }`
+5. Copy dist config file: `cp ./PHPUnit/phpunit.xml.dist PROJECT_ROOT_PATH`
+6. Make config file from dist config file: `cp PROJECT_ROOT_PATH/phpunit.xml.dist PROJECT_ROOT_PATH/phpunit.xml`
+7. Create directory for extensions: `mkdir -p  PROJECT_ROOT_PATH/tests/Extension`
+8. Copy bypass final hook: `cp ./PHPUnit/BypassFinalHook.php PROJECT_ROOT_PATH/tests/Extension`
