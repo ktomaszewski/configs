@@ -12,3 +12,6 @@ Repository with my configs.
 2. Copy config file: `cp ./Nano/.nanorc ~/.nanorc`
 3. Create directory for configs: `mkdir -p ~/.config/nano`
 4. Copy syntax highlighting configs: `cp -r ./Nano/syntax-highlighting/* ~/.config/nano`
+
+## EditorConfig
+1. Copy editor config file: `cp ./EditorConfig/.editorconfig PROJECT_ROOT_PATH`
