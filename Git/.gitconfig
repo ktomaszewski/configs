@@ -31,6 +31,7 @@
     ap = add -p
     c = commit
     ch = checkout
+    m = merge --no-ff
     rr = rebase -r
     ri = rebase -i
     pf = push --force-with-lease
