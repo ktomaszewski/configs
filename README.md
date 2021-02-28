@@ -37,16 +37,16 @@ Now change directory: `cd config`
 1. Import settings in PhpStorm: `./PhpStorm/settings.zip`
 
 ## EasyCodingStandard
-1. Add `ext-inl` dependency: `composer require --dev ext-intl`
-2. Add `symplify/easy-coding-standard dependency` dependency: `composer require --dev symplify/easy-coding-standard`
+1. Add `ext-intl` dev dependency to composer.json: `"require-dev": { "ext-intl": "*" }`
+2. Add `symplify/easy-coding-standard` dev dependency: `composer require --dev symplify/easy-coding-standard`
 3. Add composer scripts: `"scripts": { "ecs-check": "vendor/bin/ecs check --match-git-diff", "ecs-fix": "vendor/bin/ecs check --fix --match-git-diff" }`
 4. Copy dist config file: `cp ./EasyCodingStandard/ecs.php.dist PROJECT_ROOT_PATH`
 5. Make config file from dist config file: `cp PROJECT_ROOT_PATH/ecs.php.dist PROJECT_ROOT_PATH/ecs.php`
 
 ## PHPUnit
-1. Add `phpunit/phpunit` dependency: `composer require --dev phpunit/phpunit`
-2. Add `phpspec/prophecy-phpunit` dependency: `composer require --dev phpspec/prophecy-phpunit`
-3. Add `dg/bypass-finals` dependency: `composer require --dev dg/bypass-finals`
+1. Add `phpunit/phpunit` dev dependency: `composer require --dev phpunit/phpunit`
+2. Add `phpspec/prophecy-phpunit` dev dependency: `composer require --dev phpspec/prophecy-phpunit`
+3. Add `dg/bypass-finals` dev dependency: `composer require --dev dg/bypass-finals`
 4. Add composer script: `"scripts": { "unit-tests": "vendor/bin/phpunit --configuration ./phpunit.xml" }`
 5. Copy dist config file: `cp ./PHPUnit/phpunit.xml.dist PROJECT_ROOT_PATH`
 6. Make config file from dist config file: `cp PROJECT_ROOT_PATH/phpunit.xml.dist PROJECT_ROOT_PATH/phpunit.xml`
