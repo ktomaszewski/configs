@@ -33,6 +33,11 @@
 [rebase]
     autoSquash = true
     autoStash = true
+[branch]
+    autosetupmerge = always
+    autosetuprebase = always
+[rerere]
+    enabled = true
 [alias]
     alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     s = status
