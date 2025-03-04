@@ -1,6 +1,7 @@
 <code_scheme name="ktomaszewski" version="173">
-  <option name="LINE_SEPARATOR" value="&#xA;" />
+  <option name="LINE_SEPARATOR" value="&#10;" />
   <option name="RIGHT_MARGIN" value="999" />
+  <option name="FORMATTER_TAGS_ENABLED" value="false" />
   <option name="SOFT_MARGINS" value="80,100,120" />
   <CssCodeStyleSettings>
     <option name="HEX_COLOR_LOWER_CASE" value="true" />
@@ -17,19 +18,22 @@
     <option name="HTML_ENFORCE_QUOTES" value="true" />
   </HTMLCodeStyleSettings>
   <JSCodeStyleSettings version="0">
+    <option name="FORCE_SEMICOLON_STYLE" value="true" />
     <option name="USE_DOUBLE_QUOTES" value="false" />
     <option name="FORCE_QUOTE_STYlE" value="true" />
-    <option name="ENFORCE_TRAILING_COMMA" value="Remove" />
+    <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
     <option name="VAR_DECLARATION_WRAP" value="0" />
     <option name="OBJECT_LITERAL_WRAP" value="0" />
     <option name="IMPORTS_WRAP" value="0" />
+    <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
     <option name="SPACES_WITHIN_IMPORTS" value="true" />
-    <option name="INDENT_CHAINED_CALLS" value="false" />
+    <option name="SPACES_WITHIN_INTERPOLATION_EXPRESSIONS" value="true" />
     <option name="IMPORT_SORT_MODULE_NAME" value="true" />
   </JSCodeStyleSettings>
   <JSON>
-    <option name="OBJECT_WRAPPING" value="0" />
-    <option name="ARRAY_WRAPPING" value="0" />
+    <option name="KEEP_TRAILING_COMMA" value="true" />
+    <option name="OBJECT_WRAPPING" value="5" />
+    <option name="ARRAY_WRAPPING" value="5" />
   </JSON>
   <Markdown>
     <option name="MAX_LINES_AROUND_HEADER" value="0" />
@@ -37,10 +41,10 @@
     <option name="MAX_LINES_BETWEEN_PARAGRAPHS" value="0" />
   </Markdown>
   <PHPCodeStyleSettings>
-    <option name="ALIGN_KEY_VALUE_PAIRS" value="true" />
     <option name="ALIGN_PHPDOC_PARAM_NAMES" value="true" />
     <option name="ALIGN_PHPDOC_COMMENTS" value="true" />
     <option name="ALIGN_INLINE_COMMENTS" value="true" />
+    <option name="COMMA_AFTER_LAST_ARRAY_ELEMENT" value="true" />
     <option name="PHPDOC_BLANK_LINE_BEFORE_TAGS" value="true" />
     <option name="PHPDOC_WRAP_LONG_LINES" value="true" />
     <option name="BLANK_LINES_BETWEEN_IMPORTS" value="1" />
@@ -52,9 +56,9 @@
     <option name="KEEP_RPAREN_AND_LBRACE_ON_ONE_LINE" value="true" />
     <option name="BLANK_LINES_AFTER_OPENING_TAG" value="1" />
     <option name="KEEP_BLANK_LINES_AFTER_LBRACE" value="0" />
+    <option name="SPACE_BEFORE_SHORT_CLOSURE_LEFT_PARENTHESIS" value="true" />
     <option name="FORCE_SHORT_DECLARATION_ARRAY_STYLE" value="true" />
     <option name="NEW_LINE_AFTER_PHP_OPENING_TAG" value="true" />
-    <option name="NULL_TYPE_POSITION" value="IN_THE_BEGINNING" />
     <option name="NAMESPACE_BRACE_STYLE" value="2" />
     <option name="PLACE_PARENS_FOR_CONSTRUCTOR" value="1" />
   </PHPCodeStyleSettings>
@@ -66,7 +70,7 @@
   <Shell_Script>
     <option name="SWITCH_CASES_INDENTED" value="true" />
   </Shell_Script>
-  <SqlCodeStyleSettings version="5">
+  <SqlCodeStyleSettings version="7">
     <option name="KEYWORD_CASE" value="2" />
     <option name="TYPE_CASE" value="2" />
     <option name="CUSTOM_TYPE_CASE" value="0" />
@@ -94,11 +98,16 @@
     <option name="EXPR_CASE_END" value="1" />
     <option name="EXPR_CASE_COLLAPSE" value="false" />
   </SqlCodeStyleSettings>
+  <TypeScriptCodeStyleSettings version="0">
+    <option name="VAR_DECLARATION_WRAP" value="0" />
+    <option name="SPACES_WITHIN_IMPORTS" value="true" />
+    <option name="SPACES_WITHIN_UNION_TYPES" value="false" />
+    <option name="INDENT_CHAINED_CALLS" value="false" />
+  </TypeScriptCodeStyleSettings>
   <XML>
     <option name="XML_ATTRIBUTE_WRAP" value="0" />
     <option name="XML_TEXT_WRAP" value="0" />
     <option name="XML_KEEP_BLANK_LINES" value="1" />
-    <option name="XML_ALIGN_ATTRIBUTES" value="false" />
   </XML>
   <yaml>
     <option name="SEQUENCE_ON_NEW_LINE" value="true" />
@@ -127,7 +136,11 @@
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
     </indentOptions>
   </codeStyleSettings>
+  <codeStyleSettings language="HTTP Request">
+    <option name="CALL_PARAMETERS_WRAP" value="5" />
+  </codeStyleSettings>
   <codeStyleSettings language="JSON">
+    <option name="SPACE_WITHIN_BRACES" value="true" />
     <indentOptions>
       <option name="INDENT_SIZE" value="4" />
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
@@ -151,16 +164,16 @@
     <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
     <option name="BLANK_LINES_AFTER_PACKAGE" value="1" />
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
-    <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
     <option name="ALIGN_MULTILINE_EXTENDS_LIST" value="true" />
     <option name="SPACE_AFTER_TYPE_CAST" value="true" />
-    <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
-    <option name="CALL_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
     <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
     <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
     <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
+    <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+    <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
     <option name="FOR_STATEMENT_LPAREN_ON_NEXT_LINE" value="true" />
     <option name="FOR_STATEMENT_RPAREN_ON_NEXT_LINE" value="true" />
+    <option name="ARRAY_INITIALIZER_WRAP" value="5" />
     <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
     <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
     <option name="IF_BRACE_FORCE" value="3" />
@@ -269,12 +282,16 @@
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
     </indentOptions>
   </codeStyleSettings>
+  <codeStyleSettings language="TypeScript">
+    <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+  </codeStyleSettings>
   <codeStyleSettings language="XML">
     <indentOptions>
       <option name="CONTINUATION_INDENT_SIZE" value="4" />
     </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="yaml">
+    <option name="SPACE_WITHIN_BRACKETS" value="false" />
     <indentOptions>
       <option name="INDENT_SIZE" value="4" />
     </indentOptions>
