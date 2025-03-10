@@ -44,6 +44,7 @@
     a = add .
     ap = add -p
     c = commit
+    b = branch -lavvv
     ch = checkout
     m = merge --no-ff
     rr = rebase -r
